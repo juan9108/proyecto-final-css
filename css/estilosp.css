@@ -30,89 +30,40 @@ header h1{
   padding-left: 5px;
 }
 
-#contenedor{
-  margin-top: 0;
-  background-color: #82c3a6;
-  display: flex;
+.contenedor-paisajes{
   width: 100%;
-}
-
-
-#img-main img{
-  width: 90%;
-  height: 70vh;
-  padding: 5%;
-  margin: 0;
-}
-
-#padre{
-  width: 100%;
-  margin: 0;
-  padding: 5px;
-  background: #d5c75f;
-  border: 1px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.hijo{
-  width: 50%;
   margin: 0;
   padding: 0;
 }
 
-.hijo .enlace-section {
-  text-align: center;
+.contenedor-paisajes .hijo{
+  width: 32%;
+  margin: 5px;
+  padding: 2px;
 }
 
-#paisajes{
-  margin: 0;
-  padding: 0;
-  box-shadow: 1px 2px 2px 2px #82c3a6;
-  border: 2px;
-  transition: rotate 1s;
-  animation: animacion 3s;
+.contenedor-paisajes #imagen1{
+  width: 32%;
+  -webki-filter: blur(10px);
+  filter: blur(10px);
 }
 
-#paisajes:hover{
-  transform: rotate(10deg);
+.contenedor-paisajes .hijo:nth-child(even){
+  width: 32%;
+  -webki-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
-@-webkit-keyframes animacion{
-  0%{
-    transform: rotate(0);
-  }
-  50%{
-    transform: rotate(10deg);
-  }
-  100%{
-    transform: rotate(0);
-  }
+.contenedor-paisajes #imagen3{
+  width: 32%;
+  -webki-filter: sepia(90%);
+  filter: sepia(90%);
 }
-
-#retratos{
-  margin: 0;
-  box-shadow: 1px 2px 2px 2px #82c3a6;
-  border: 2px;
-  transition: translate 1s;
-  animation: mianimacion 3s;
-}
-
-#retratos:hover{
-  transform: translate(20px, -5px);
-}
-
-@-webkit-keyframes mianimacion{
-  0%{
-    transform: translate(0);
-  }
-  50%{
-    transform: translate(20px, -5px);
-  }
-  100%{
-    transform: translate(0);
-  }
+.hijo img{
+  width: 100%;
 }
 
 #footer-contenedor{
