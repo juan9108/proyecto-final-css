@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Comenzando con la Fotografía</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <h1>Comenzando con la Fotografía</h1>
+      <nav class="enlace">
+        <a href="#">Inicio</a>
+        <a href="#">Paisajes</a>
+        <a href="#">Retratos</a>
+      </nav>
+    </header>
+    <section id="contenedor">
+      <figure id="img-main">
+        <source media="(min-width:240px)" srcset="imagenes/imagen1movil.jpg" >
+        <source media="(min-width:1000px)" srcset="imagenes/imagen1laptop.jpg" >
+        <img src="imagenes/imagen1.jpg" alt="imagen1">
+      </figure>
+    </section>
+    <section id="padre">
+      <figure class="hijo" id="paisajes">
+        <source media="(min-width:240px)" srcset="imagenes/imagen2movil.jpg" >
+        <source media="(min-width:1000px)" srcset="imagenes/imagen2laptop.jpg" >
+        <img src="imagenes/imagen2.jpg" alt="imagen2">
+        <div class="enlace-section">
+          <a href="#">Paisajes</a>
+        </div>
+      </figure>
+      <figure class="hijo" id="retratos">
+        <source media="(min-width:240px)" srcset="imagenes/imagen3movil.jpg" >
+        <source media="(min-width:1000px)" srcset="imagenes/imagen3movil.jpg" >
+        <img src="imagenes/imagen3.jpg" alt="imagen3">
+        <div class="enlace-section">
+          <a href="#">retratos</a>
+        </div>
+      </figure>
+    </section>
+    <footer id="footer-contenedor">
+      <div class="footer-hijo">
+        <div><h3>Contacto</h3></div>
+        <div>
+        <ul>
+          <li>juanmarin9108@outlook.com</li>
+          <li>carrera 54b #47-11</li>
+          <li>314 756 4913</li>
+        </ul>
+       </div>
+      </div>
+      <div class="footer-hijo">
+        <div><h3>Terminos</h3></div>
+          <div><p>terminos y condiciones</p></div>
+      </div>
+      <div class="footer-hijo">
+        <div><h3>Redes Sociales</h3></div>
+        <div id="redes-sociales">
+         <ul>
+           <li>
+             <img src="iconos/facebook.svg">
+             <label>Siguenos en facebook</label>
+           </li>
+           <li>
+             <img src="iconos/instagram.svg">
+             <label>Siguenos en instagram</label>
+           </li>
+           <li>
+             <img src="iconos/twiter.svg">
+             <label>Siguenos en twiter</label>
+           </li>
+         </ul>
+       </div>
+      </div>
+      <div class="footer-hijo">
+        <div><h3>Derechos</h3></div>
+        <div>
+         <ul>
+           <li>Juan Marin</li>
+           <li>CopyRight 2018</li>
+         </ul>
+       </div>
+      </div>
+    </footer>
+  </body>
+</html>
