@@ -30,17 +30,26 @@ header h1{
   padding-left: 5px;
 }
 
+header nav a{
+  color: white;
+}
+
+header nav a:hover{
+  text-decoration: none;
+}
+
 #contenedor{
   margin-top: 0;
   background-color: #82c3a6;
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 
 
 #img-main img{
-  width: 90%;
-  height: 70vh;
+  width: 60vw;
+  height: 60vh;
   padding: 5%;
   margin: 0;
 }
@@ -48,7 +57,7 @@ header h1{
 #padre{
   width: 100%;
   margin: 0;
-  padding: 5px;
+  padding: 15px;
   background: #d5c75f;
   border: 1px;
   display: flex;
@@ -128,10 +137,67 @@ header h1{
 
 .footer-hijo{
   width: 25%;
+  margin: 1;
   display: block;
 }
 
 .footer-hijo #redes-sociales ul li img[src^="iconos"]{
   width: 36px;
   height: 36px;
+}
+
+@media (min-width:900px) {
+  .contenido{
+    margin: 0 auto;
+    max-width: 900px;
+    display: block;
+    align-content: center;
+  }
+  header{
+    animation: slidein 4s;
+  }
+
+}
+
+@media (max-width:900px) {
+  .contenido{
+    max-width: 100%;
+  }
+  header{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    animation: slidein 4s;
+  }
+
+
+  #padre .hijo{
+    margin-left: 20%;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  #footer-contenedor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #footer-contenedor .footer-hijo{
+    display: block;
+    width: 100%;
+    margin-left: 10%;
+    padding: 10px;
+  }
+}
+
+@webkit-keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    0%;
+  }
 }
